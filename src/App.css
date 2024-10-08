@@ -1,3 +1,40 @@
 .header{
   display: flex;
+  justify-content: space-between;
+  border: 1px solid #000;
+}
+.logo{
+  width: 150px;
+}
+.nav-items{
+  padding: 8px 28px;
+}
+.nav-items ul{
+  display: flex;
+  
+ 
+
+}
+.nav-items ul li{
+  list-style: none;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #000;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+.res-card{
+  width: 200px;
+  height: 300px;
+  border: 1px solid #000;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.search{
+  padding:10px ;
+  margin:20px
 }
