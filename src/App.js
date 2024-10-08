@@ -36,7 +36,7 @@ const styleCard={
 
 const ResturantCard = (props) => {
   const {resData}=props;
-  const {image,name,cuisines,rating,time}=resData;
+ const {image,name,cuisines,rating,time} = resData;
   return (
     <div className="res-card" style={styleCard}>
       <img className='res-img1' src={image} alt="res1" />  
