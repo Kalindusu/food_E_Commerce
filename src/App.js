@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDom from 'react-dom/client';
 import './App.css';
 import logo from '../src/assets/download.png';
+import res1 from '../src/assets/res1.jpeg';
 
 const Header = () => {
   return (
@@ -21,10 +22,18 @@ const Header = () => {
   );
 };
 
+const styleCard={
+  backgroundColor: 'lightgray',
+}
+
 const ResturantCard = () => {
   return (
-    <div className="res-card">
+    <div className="res-card" style={styleCard}>
+      <img className='res-img1' src={res1} alt="res1" />  
       <h3>Megna Foods</h3>
+      <h4>Biriyan Shop , North , New Delhi</h4>
+      <h4>4.4 Rating</h4>
+      <h4>38 minutes</h4>
     </div>
   );
 };

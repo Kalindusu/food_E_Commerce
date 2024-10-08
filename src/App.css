@@ -27,14 +27,20 @@
 }
 .res-card{
   width: 200px;
-  height: 300px;
-  border: 1px solid #000;
+  height: auto;
   margin: 20px;
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
 }
+.res-card:hover{
+  border: 1px solid #000;
+}
 .search{
   padding:10px ;
   margin:20px
+}
+.res-img1{
+ padding: 5px;
+  width: 100%;
 }
