@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDom from 'react-dom/client';
 import './App.css';
-import logo from '../src/assets/download.png';
 import res1 from '../src/assets/res1.jpeg';
 import re2 from '../src/assets/re2.jpeg';
 import re3 from '../src/assets/re3.jpeg';
@@ -10,25 +9,10 @@ import re5 from '../src/assets/re5.jpeg';
 import re6 from '../src/assets/re6.jpeg';
 import res7 from '../src/assets/res7.jpeg';
 import re8 from '../src/assets/re8.jpeg';
+import Header from './Components/Header';
 
 
-const Header = () => {
-  return (
-    <div className="header">
-      <div className="logo-container">
-        <img className='logo' src={logo} alt="logo" />
-      </div>
-      <div className="nav-items">
-        <ul>
-          <li>Home</li>
-          <li>Products</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
+
 
 const styleCard={
   backgroundColor: 'lightgray',
