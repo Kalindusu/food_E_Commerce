@@ -5,7 +5,12 @@ const Body = () => {
     return (
       <div className="body">
         <div className='filter'>
-          <button className="filter-btn">Top Rated Resturants</button>
+          <button className="filter-btn" onClick={() => {
+            resList=resList.filter((res) => res.rating > 4.3);
+            console.log(resList);
+            
+          }}
+            >Top Rated Resturants</button>
         </div>
         <div className='res-container'>
           {
