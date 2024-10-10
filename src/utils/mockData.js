@@ -7,7 +7,7 @@ import re6 from '../assets/re6.jpeg';
 import res7 from '../assets/res7.jpeg';
 import re8 from '../assets/re8.jpeg';
 
-const resList = [
+let  resList = [
     {
       name: "Ocean Breeze",
       cuisines: "Seafood, Continental",
