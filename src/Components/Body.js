@@ -7,14 +7,20 @@ import resList from '../utils/mockData';
 const Body = () => {
 
   const [listOfResturant,setListOfResurant]=useState(resList);  
-  useEffect(()=>{
-    fetchData();
-  },[]);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await fetch('https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.7040592&lng=77.10249019999999&restaurantId=12345');
+        const json = await data.json();
+        console.log(json);
+      } catch (error) {
+        console.error('Failed to fetch:', error);
+      }
+    };
 
-  const fetchData=async()=>{
-    const data=await fetch("https://api.spoonacular.com/");
-    const json=await data.json();
-  }
+    fetchData();
+  }, []); 
+  
   
   return (
       

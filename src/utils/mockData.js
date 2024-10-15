@@ -12,6 +12,7 @@ let  resList = [
       name: "Ocean Breeze",
       cuisines: "Seafood, Continental",
       rating: 4.5,
+      price: "$$",
       time: "30-40 mins",
       image: res1
     },
