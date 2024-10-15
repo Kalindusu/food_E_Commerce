@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ResturantCard from './ResturantCard';
 import resList from '../utils/mockData';
 
@@ -6,11 +6,21 @@ import resList from '../utils/mockData';
 
 const Body = () => {
 
-  const [listOfResturant,setListOfResurant]=useState(resList);    return (
+  const [listOfResturant,setListOfResurant]=useState(resList);  
+  useEffect(()=>{
+    fetchData();
+  },[]);
+
+  const fetchData=async()=>{
+    const data=await fetch();
+    const json=await data.json();
+  }
+  
+  return (
       
       <div className="body">
         <div className='filter'>
-          <button className="filter-btn" onClick={() => {
+           <button className="filter-btn" onClick={() => {
             const filterList=listOfResturant.filter((res)=>res.rating>4.5);
             setListOfResurant(filterList);
             
