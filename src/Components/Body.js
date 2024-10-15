@@ -12,7 +12,7 @@ const Body = () => {
   },[]);
 
   const fetchData=async()=>{
-    const data=await fetch();
+    const data=await fetch("https://api.spoonacular.com/");
     const json=await data.json();
   }
   
